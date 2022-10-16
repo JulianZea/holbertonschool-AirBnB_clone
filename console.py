@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """Console or simple framework for writing
 line-oriented command interpreters"""
 
@@ -23,10 +23,11 @@ list_class = {"BaseModel": BaseModel, "User": User, "City": City, "Place":
 class HBNBCommand(cmd.Cmd):
     """ Class that contains the entry point of the command interpreter"""
 
-    def __init__(self):
+    prompt = '(hbnb) '
+    """def __init__(self):
         cmd.Cmd.__init__(self)
         self.prompt = '(hbnb)'
-
+    """
     def do_quit(self, arg):
         """Quit command to exit the program"""
         sys.exit(1)
