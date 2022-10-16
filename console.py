@@ -106,3 +106,74 @@ class HBNBCommand(cmd.Cmd):
             else:
                 del(dict_all_obj[string])
                 storage.save()
+
+    def do_all(self, newclass):
+        """Prints all string representation of all
+        instances based or not on the class name.
+        Ex: $ all BaseModel or $ all.
+        * The printed result must be a list of strings
+        * If the class name doesn’t exist,
+        print ** class doesn't exist **
+        (ex: $ all MyModel)"""
+        dict_all_obj = storage.all()
+        list_arg = newclass.split(" ")
+        list_str = []
+        obj_str = ""
+        if len(newclass) == 0:
+            for key, value in dict_all_obj.items():
+                list_str.append(str(value))
+                print(list_str)
+        elif not list_arg[0] in list_class:
+            print("class doesn't exist")
+            return
+        else:
+            for key, value in dict_all_obj.items():
+                name_class = key.split(".")
+                if name_class[0] == list_arg[0]:
+                    list_str.append(str(value))
+                    print(list_str)
+
+    def do_update(self, args):
+        """Updates an instance based on the class name and id by adding or
+        updating attribute (save the change into the JSON file).
+        Ex: $ update BaseModel 1234-1234-1234 email "aibnb@mail.com"."""
+        list_arg = args.split(" ")
+
+        if not args:
+            print("**class name missing**")
+            return
+        elif not list_arg[0] in list_class:
+            print("** class doesn't exist **")
+            return
+        elif len(list_arg) < 2:
+            print("** instance id missing **")
+            return
+        else:
+            dict_all_obj = storage.all()
+            string = f'{list_arg[0]}.{list_arg[1]}'
+
+            if string not in dict_all_obj.keys():
+                print("** no instance found **")
+                return
+            elif len(list_arg) < 3:
+                print("** attribute name missing **")
+                return
+            elif len(list_arg) < 4:
+                print("** value missing **")
+                return
+            else:
+                list_param = ["id", "created_at", "updated_at"]
+                if not list_arg[2] in list_param:
+                    dict_all_obj = storage.all()
+                    string = f'{list_arg[0]}.{list_arg[1]}'
+                    for key, value in dict_all_obj.items():
+                        if key == string:
+                            dict_value = value.__dict__
+                            dict_value[list_arg[2]] = list_arg[3]
+                            value.save()
+                else:
+                    print("Cant’ be updated")
+
+
+if __name__ == '__main__':
+    HBNBCommand().cmdloop()
