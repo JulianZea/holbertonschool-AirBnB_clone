@@ -44,7 +44,7 @@ class HBNBCommand(cmd.Cmd):
         """Create a new instance of Basemodel, save it (to JSON file)
            and prints the id."""
         if not name_class:
-            print("**class name missing**")
+            print("** class name missing **")
             return
         elif name_class not in list_class:
             print("** class doesn't exist **")
@@ -61,7 +61,7 @@ class HBNBCommand(cmd.Cmd):
         list_arg = args.split(" ")
 
         if len(args) == 0:
-            print("** class name missing ** ")
+            print("** class name missing **")
             return
 
         elif not list_arg[0] in list_class:
@@ -90,7 +90,7 @@ class HBNBCommand(cmd.Cmd):
         list_arg = class_Id.split(" ")
 
         if not class_Id:
-            print("**class name missing**")
+            print("** class name missing **")
             return
 
         elif not list_arg[0] in list_class:
@@ -129,7 +129,7 @@ class HBNBCommand(cmd.Cmd):
                 list_str.append(str(value))
                 print(list_str)
         elif not list_arg[0] in list_class:
-            print("class doesn't exist")
+            print("** class doesn't exist **")
             return
         else:
             for key, value in dict_all_obj.items():
@@ -145,7 +145,7 @@ class HBNBCommand(cmd.Cmd):
         list_arg = args.split(" ")
 
         if not args:
-            print("**class name missing**")
+            print("** class name missing **")
             return
         elif not list_arg[0] in list_class:
             print("** class doesn't exist **")
