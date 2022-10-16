@@ -1,3 +1,7 @@
+#!/usr/bin/python
+"""Console or simple framework for writing
+line-oriented command interpreters"""
+
 import cmd
 import sys
 
