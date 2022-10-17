@@ -51,6 +51,7 @@ class HBNBCommand(cmd.Cmd):
             return
         else:
             new_instance = BaseModel()
+            new_instance = eval(name_class + '()')
             new_instance.save()
             print(new_instance.id)
 
