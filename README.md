@@ -30,6 +30,12 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 -   Clone the repository. git clone [https://github.com/DaisyGeraldine/holbertonschool-AirBnB_clone.git](https://github.com/mecomonteshbtn/AirBnB_clone.git)
 -   Open the /AirBnB_clone directory and execute console.py
 
+## Requirements
+- UBUNTU 20.04.4
+- Python 3.8.10
+- You have to create a global variable "DATA_NAME". 
+  Example : export DATA_NAME="File.json"
+
 ##  Execution
 
 Your shell should work like this in interactive mode:
