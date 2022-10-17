@@ -16,7 +16,7 @@ from models.review import Review
 class FileStorage:
     """File Storage Class"""
 
-    __file_path = "file.json"
+    __file_path = os.environ["DATA_NAME"]
     __objects = {}
 
     def all(self):
