@@ -31,3 +31,16 @@ class Test_Base(unittest.TestCase):
     def test_objects(self):
         """Test to_dict"""
         self.assertTrue(type(self.basemodel._objects), type([])) 
+
+    def test_to_dict(self):
+        """Test to_dict"""
+        self.assertTrue(type(self.basemodel.to_dict),type({}))
+
+    def test_val(self):
+        """attributes"""
+        self.baseModel.name = "Holberton"
+        self.baseModel.my_number = 89
+        self.baseModel.save()
+
+if __name__ == '__main__':
+    unittest.main()
