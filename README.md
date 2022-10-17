@@ -1,6 +1,5 @@
-```# AirBnB clone - The console
-
-https://raw.githubusercontent.com/DaisyGeraldine/holbertonschool-AirBnB_clone/master/AirBnB%20clone%20).png
+# AirBnB clone - The console
+![enter image description here](https://raw.githubusercontent.com/DaisyGeraldine/holbertonschool-AirBnB_clone/master/AirBnB%20clone%20%29.png)
 
 #  First step: Write a command interpreter to manage your AirBnB objects.
 
@@ -14,31 +13,20 @@ All unit tests will be created to validate all our classes and storage engine.
 
 #  Let's go! 🤖
 
-[![The console](http://img.youtube.com/vi/p00ES-5K4C8/0.jpg)](http://www.youtube.com/watch?v=p00ES-5K4C8 "AirBnB The Console")
-
 #  Learning Objectives
 
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
-How to create a Python package
-
-How to create a command interpreter in Python using the cmd module
-
-What is Unit testing and how to implement it in a large project
-
-How to serialize and deserialize a Class
-
-How to write and read a JSON file
-
-How to manage datetime
-
-What is an UUID
-
-What is *args and how to use it
-
-What is **kwargs and how to use it
-
-How to handle named arguments in a function
+- How to create a Python package
+- How to create a command interpreter in Python using the cmd module
+- What is Unit testing and how to implement it in a large project
+- How to serialize and deserialize a Class
+- How to write and read a JSON file
+- How to manage datetime
+- What is an UUID
+- What is *args and how to use it
+- What is **kwargs and how to use it
+- How to handle named arguments in a function
 
 #  Execution
 
@@ -68,26 +56,18 @@ $
 
 #  Execute program called _console.py_
 
-Cotains:
+**Cotains:**
 
 - prompt: (hbnb)
-
 - quit: exit the program
-
 - help: keep it updated
-
 - create: creates a new instance of BaseModel
-
 - show: prints the string representation of an instance based on the class name and id
-
 - destroy: deletes an instance based on the class name and id
-
 - all: prints all string representation of all instances based or not on the class name
-
 - update: updates an instance based on the class name and id by adding or updating attribute
 
-``` python
-
+```py
 root at DESKTOP-JID01TK in ~/projects/holbertonschool-AirBnB_clone on master*
 $ ./console.py
 (hbnb) all MyModel
@@ -117,6 +97,7 @@ $ ./console.py
 ** no instance found **
 (hbnb)
 ```
+## Json graph
 ![enter image description here](https://raw.githubusercontent.com/DaisyGeraldine/holbertonschool-AirBnB_clone/master/jsoncrack.com_1.png)
 
 
@@ -134,3 +115,9 @@ $ ./console.py
 
 * **Julian Zea** - *AirBnB Clone - The Console* - [Julian Zea](https://github.com/JulianZea)✒️
 ---
+
+## Authors
+| [<img src="https://avatars.githubusercontent.com/u/105659277?v=4" width=130><br><sub> Daisy Geraldine ✒️</sub>](https://github.com/DaisyGeraldine)   | [<img src="https://avatars.githubusercontent.com/u/105599326?v=4" width=130><br><sub> Julian Zea ✒️</sub>](https://github.com/JulianZea)  |  [<img src="https://avatars.githubusercontent.com/u/64811637?v=4" width=130><br><sub> Julian Ticse ✒️</sub>](https://github.com/JPTicse)
+|--|--|--|
+|  |  |  |
+|  |  |  |
