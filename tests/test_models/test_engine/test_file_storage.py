@@ -134,5 +134,36 @@ class TestSave(unittest.TestCase):
         models.storage.save()
         self.assertEqual(os.path.getsize("file.json"), 2)
 
+    def test_save_into_json(self):
+        """Check if the keys are inside the Json file."""
+        dico = models.storage.all().copy()
+        for k, v in dico.items():
+            del models.storage.all()[k]
+        models.storage.save()
+        b1 = BaseModel()
+        u1 = User()
+        s1 = State()
+        p1 = Place()
+        c1 = City()
+        a1 = Amenity()
+        r1 = Review()
+        b1.save()
+        u1.save()
+        s1.save()
+        p1.save()
+        c1.save()
+        a1.save()
+        r1.save()
+        text = ""
+        with open("file.json", "r", encoding="utf-8") as f:
+            text = f.read()
+            self.assertIn(f"BaseModel.{b1.id}", text)
+            self.assertIn(f"User.{u1.id}", text)
+            self.assertIn(f"State.{s1.id}", text)
+            self.assertIn(f"Place.{p1.id}", text)
+            self.assertIn(f"City.{c1.id}", text)
+            self.assertIn(f"Amenity.{a1.id}", text)
+            self.assertIn(f"Review.{r1.id}", text)
+
 if __name__ == '__main__':
     unittest.main()
