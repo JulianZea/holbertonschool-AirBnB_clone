@@ -1,22 +1,20 @@
 # AirBnB clone - The console
 ![enter image description here](https://raw.githubusercontent.com/DaisyGeraldine/holbertonschool-AirBnB_clone/master/AirBnB%20clone%20%29.png)
 
-#  First step: Write a command interpreter to manage your AirBnB objects.
+## Command interpreter to manage your AirBnB objects.
 
 This is the first step towards creating the first complete web app - the AirBnB clone.
 
 Each task is linked:
-
 A main class (called BaseModel) is established to handle initialization, serialization and deserialization of future instances, a simple serialization / deserialization flow will be created: Instance <-> Dictionary <-> JSON string <-> file, will be created all classes used for AirBnB (User, State, City, Place ...) that inherit from BaseModel, the first abstracted storage engine of the project will be created: file storage.
 
 All unit tests will be created to validate all our classes and storage engine.
 
-#  Let's go! 🤖
+##  Let's go! 🤖
 
-#  Learning Objectives
+##  Learning Objectives
 
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
-
 - How to create a Python package
 - How to create a command interpreter in Python using the cmd module
 - What is Unit testing and how to implement it in a large project
@@ -28,44 +26,37 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - What is **kwargs and how to use it
 - How to handle named arguments in a function
 
-#  Execution
+## Installation
+-   Clone the repository. git clone [https://github.com/DaisyGeraldine/holbertonschool-AirBnB_clone.git](https://github.com/mecomonteshbtn/AirBnB_clone.git)
+-   Open the /AirBnB_clone directory and execute console.py
+
+##  Execution
 
 Your shell should work like this in interactive mode:
-
-``` python
+``` py
 
 $ ./console.py
-
 (hbnb) help
-
 Documented commands (type help <topic>):
-
 ========================================
-
 EOF help quit
-
 (hbnb)
-
 (hbnb)
-
 (hbnb) quit
-
 $
-
 ```
 
-#  Execute program called _console.py_
-
+## Examples of Usage : _console.py_
 **Cotains:**
 
-- prompt: (hbnb)
-- quit: exit the program
-- help: keep it updated
-- create: creates a new instance of BaseModel
-- show: prints the string representation of an instance based on the class name and id
-- destroy: deletes an instance based on the class name and id
-- all: prints all string representation of all instances based or not on the class name
-- update: updates an instance based on the class name and id by adding or updating attribute
+- **prompt:** (hbnb)
+- **quit**: exit the program
+- **help**: keep it updated
+- **create**: creates a new instance of BaseModel
+- **show**: prints the string representation of an instance based on the class name and id
+- **destroy**: deletes an instance based on the class name and id
+- **all**: prints all string representation of all instances based or not on the class name
+- **update**: updates an instance based on the class name and id by adding or updating attribute
 
 ```py
 root at DESKTOP-JID01TK in ~/projects/holbertonschool-AirBnB_clone on master*
@@ -97,26 +88,30 @@ $ ./console.py
 ** no instance found **
 (hbnb)
 ```
+## Running the tests  ⚙️
+
+```text
+root @ PC_2022 in ~/holbertonschool-AirBnB_clone |02:50:49  |master U:1 ?:13 ✗|
+$ python3 -m unittest discover tests
+.......................................
+----------------------------------------------------------------------
+Ran 39 tests in 0.136s
+
+OK
+```
+
 ## Json graph
 ![enter image description here](https://raw.githubusercontent.com/DaisyGeraldine/holbertonschool-AirBnB_clone/master/jsoncrack.com_1.png)
 
 
-# Deployment 📦
+## Deployment 📦
 
 ### Final Product
 
 ![enter image description here](https://raw.githubusercontent.com/DaisyGeraldine/holbertonschool-AirBnB_clone/master/readme.png)
 
-# Authors :books:
+## Authors :books:
 
-* **Daisy Chipana** - *AirBnB Clone - The Console* - [Daisy Chipana](https://github.com/[DaisyGeraldine](https://github.com/DaisyGeraldine))✒️
-
-* **Juan Ticse** - *AirBnB Clone - The Console* - [Juan Ticse](https://github.com/JPTicse)✒️
-
-* **Julian Zea** - *AirBnB Clone - The Console* - [Julian Zea](https://github.com/JulianZea)✒️
----
-
-## Authors
 | [<img src="https://avatars.githubusercontent.com/u/105659277?v=4" width=130><br><sub> Daisy Geraldine ✒️</sub>](https://github.com/DaisyGeraldine)   | [<img src="https://avatars.githubusercontent.com/u/105599326?v=4" width=130><br><sub> Julian Zea ✒️</sub>](https://github.com/JulianZea)  |  [<img src="https://avatars.githubusercontent.com/u/64811637?v=4" width=130><br><sub> Julian Ticse ✒️</sub>](https://github.com/JPTicse)
 |--|--|--|
 |  |  |  |
